@@ -1,0 +1,100 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #ffa500;
+}
+
+.conversor {
+    margin-top: 20px;
+}
+
+.conversor label, .conversor select {
+    display: block;
+    margin-top: 10px;
+    color: #ffa500;
+}
+
+.conversor select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffa500;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+.conversor button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.conversor button:hover {
+    background-color: #ff7d00;
+}
+
+.conversor #result {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ffa500;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Estilização do input de quantidade */
+#amount {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffa500;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilização do input de quantidade quando em foco (focus) */
+#amount:focus {
+    outline: none; /* Remove a borda ao receber foco */
+    border-color: #ff7d00; /* Mude a cor da borda quando em foco */
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .conversor select, .conversor button {
+        width: 100%;
+    }
+}
